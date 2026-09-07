@@ -26,6 +26,7 @@ export class AppealDetailsSentPage extends CuiBase {
       .or(this.page.locator('h1', { hasText: 'You have sent your appeal details' }))
       .or(this.page.locator('h1', { hasText: 'Your late appeal details have been sent' })),
     whatHappensNextHeading: this.page.getByRole('heading', { level: 2, name: 'What happens next', exact: true }),
+    whatHappensNextBulletPointList: this.page.getByRole('heading', { level: 2, name: 'What happens next', exact: true }).locator('+ ul'),
     thingsYouCanDoNowHeading: this.page.getByRole('heading', { level: 2, name: 'Things you can do now', exact: true }),
   } as const satisfies Record<string, Locator>;
 
