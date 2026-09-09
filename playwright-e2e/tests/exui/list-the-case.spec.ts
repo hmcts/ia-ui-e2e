@@ -12,7 +12,10 @@ test.describe('Set of tests to verify admin user is able to list a case for hear
         isApplicantStateless: false,
         nationality: 'Slovak',
         isUserInTheUk: 'Yes',
-        doesApplicantHaveASponsor: 'No',
+        sponsorDetails: {
+          doesApplicantHaveASponsor: 'No',
+          doesApplicantHaveANonLegalRepSponsor: 'No',
+        },
         decisionWithOrWithoutHearing: 'decisionWithHearing',
         isApplicationInTime: true,
         whetherApplicantHasToPayAFee: 'None of these statements apply to me',

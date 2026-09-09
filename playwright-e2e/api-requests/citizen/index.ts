@@ -21,6 +21,7 @@ export * from './new-appeal/your-details/your-contact-details/sponsor-name.api';
 export * from './new-appeal/your-details/your-contact-details/sponsor-address.api';
 export * from './new-appeal/your-details/your-contact-details/sponsor-contact-preferences.api';
 export * from './new-appeal/your-details/your-contact-details/sponsor-authorisation.api';
+export * from './new-appeal/your-details/your-contact-details/has-sponsor-or-non-legal-rep.api';
 export * from './new-appeal/your-details/your-contact-details/is-same-person-as-sponsor.api';
 export * from './new-appeal/your-details/your-contact-details/non-legal-rep-name.api';
 export * from './new-appeal/your-details/your-contact-details/non-legal-rep-address.api';

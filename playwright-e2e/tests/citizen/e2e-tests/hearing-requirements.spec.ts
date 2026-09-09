@@ -9,7 +9,10 @@ test.describe('Set of tests to verify user is able to submit answers to hearing 
         isApplicantStateless: false,
         nationality: 'Bolivian',
         isUserInTheUk: 'Yes',
-        doesApplicantHaveASponsor: 'No',
+        sponsorDetails: {
+          doesApplicantHaveASponsor: 'No',
+          doesApplicantHaveANonLegalRepSponsor: 'No',
+        },
         decisionWithOrWithoutHearing: 'decisionWithHearing',
         isApplicationInTime: true,
         whetherApplicantHasToPayAFee: 'None of these statements apply to me',

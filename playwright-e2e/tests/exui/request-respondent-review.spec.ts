@@ -12,7 +12,10 @@ test.describe('Set of tests to verify case officer is able to request respondent
         isApplicantStateless: false,
         nationality: 'Sudanese',
         isUserInTheUk: 'Yes',
-        doesApplicantHaveASponsor: 'No',
+        sponsorDetails: {
+          doesApplicantHaveASponsor: 'No',
+          doesApplicantHaveANonLegalRepSponsor: 'No',
+        },
         decisionWithOrWithoutHearing: 'decisionWithHearing',
         isApplicationInTime: true,
         whetherApplicantHasToPayAFee: 'None of these statements apply to me',

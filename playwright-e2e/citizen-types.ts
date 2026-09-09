@@ -9,9 +9,11 @@ export type YourDetailsJourney = {
   isApplicationInTime: boolean;
   nationality?: Nationality;
   hasApplicantReceivedADeportationOrder: YesOrNoType;
-  doesApplicantHaveASponsor: YesOrNoType;
-  doesApplicantHaveANonLegalRepresentative?: YesOrNoType;
-  isSponsorAndNonLegalRepresentativeTheSamePerson?: YesOrNoType;
+  sponsorDetails: {
+    doesApplicantHaveASponsor: YesOrNoType;
+    doesApplicantHaveANonLegalRepSponsor: YesOrNoType;
+    isSponsorAndNonLegalRepTheSamePerson?: YesOrNoType;
+  };
 };
 
 export type DecisionTypeJourney = {

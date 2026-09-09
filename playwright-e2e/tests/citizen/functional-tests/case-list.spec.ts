@@ -39,7 +39,10 @@ test.describe('Set of tests to verify functionality of case list page on citizen
         isApplicationInTime: true,
         nationality: 'Sudanese',
         hasApplicantReceivedADeportationOrder: 'No',
-        doesApplicantHaveASponsor: 'No',
+        sponsorDetails: {
+          doesApplicantHaveASponsor: 'No',
+          doesApplicantHaveANonLegalRepSponsor: 'No',
+        },
         decisionWithOrWithoutHearing: 'decisionWithHearing',
         whetherApplicantHasToPayAFee: 'I got a fee waiver from the Home Office for my application to stay in the UK',
         appealSubmissionType: 'Non-Pay Appeal',

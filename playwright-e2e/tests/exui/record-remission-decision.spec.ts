@@ -12,7 +12,10 @@ test.describe('Set of tests to verify admin user is able to record a remission d
         isApplicantStateless: false,
         nationality: 'Belgian',
         isUserInTheUk: 'Yes',
-        doesApplicantHaveASponsor: 'No',
+        sponsorDetails: {
+          doesApplicantHaveASponsor: 'No',
+          doesApplicantHaveANonLegalRepSponsor: 'No',
+        },
         decisionWithOrWithoutHearing: 'decisionWithHearing',
         isApplicationInTime: true,
         whetherApplicantHasToPayAFee: 'I got a fee waiver from the Home Office for my application to stay in the UK',

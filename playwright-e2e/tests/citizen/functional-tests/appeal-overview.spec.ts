@@ -16,7 +16,10 @@ test.describe('Set of tests to verify functionality of application overview page
         isApplicationInTime: true,
         nationality: 'Sudanese',
         hasApplicantReceivedADeportationOrder: 'No',
-        doesApplicantHaveASponsor: 'No',
+        sponsorDetails: {
+          doesApplicantHaveASponsor: 'No',
+          doesApplicantHaveANonLegalRepSponsor: 'No',
+        },
         decisionWithOrWithoutHearing: 'decisionWithHearing',
         whetherApplicantHasToPayAFee: 'I got a fee waiver from the Home Office for my application to stay in the UK',
         appealSubmissionType: 'Non-Pay Appeal',
@@ -80,7 +83,10 @@ test.describe('Set of tests to verify functionality of application overview page
         nationality: 'Sri Lankan',
         payForAppealNowOrLater: 'payNow',
         hasApplicantReceivedADeportationOrder: 'No',
-        doesApplicantHaveASponsor: 'No',
+        sponsorDetails: {
+          doesApplicantHaveASponsor: 'No',
+          doesApplicantHaveANonLegalRepSponsor: 'No',
+        },
         decisionWithOrWithoutHearing: 'decisionWithoutHearing',
         whetherApplicantHasToPayAFee: 'None of these statements apply to me',
         appealSubmissionType: 'Pay Appeal',
@@ -155,7 +161,10 @@ test.describe('Set of tests to verify functionality of application overview page
         isApplicationInTime: true,
         nationality: 'Surinamese',
         hasApplicantReceivedADeportationOrder: 'No',
-        doesApplicantHaveASponsor: 'No',
+        sponsorDetails: {
+          doesApplicantHaveASponsor: 'No',
+          doesApplicantHaveANonLegalRepSponsor: 'No',
+        },
         decisionWithOrWithoutHearing: 'decisionWithHearing',
         appealSubmissionType: 'Non-Pay Appeal',
       });
