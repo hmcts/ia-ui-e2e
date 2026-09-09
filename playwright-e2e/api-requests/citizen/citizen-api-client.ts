@@ -85,7 +85,11 @@ export class CitizenApiClient {
       isApplicationInTime: appealData.isApplicationInTime,
       nationality: appealData.nationality,
       hasApplicantReceivedADeportationOrder: appealData.hasApplicantReceivedADeportationOrder,
-      doesApplicantHaveASponsor: appealData.doesApplicantHaveASponsor,
+      sponsorDetails: {
+        doesApplicantHaveASponsor: appealData.sponsorDetails.doesApplicantHaveASponsor,
+        doesApplicantHaveANonLegalRepSponsor: appealData.sponsorDetails.doesApplicantHaveANonLegalRepSponsor,
+        isSponsorAndNonLegalRepTheSamePerson: appealData.sponsorDetails.isSponsorAndNonLegalRepTheSamePerson,
+      },
     });
 
     await this.cui_decisionTypeUserFlowApi.submitDecisionTypeFlowViaApi({

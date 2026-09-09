@@ -16,7 +16,10 @@ test.describe(
             isApplicantStateless: false,
             nationality: 'Slovak',
             isUserInTheUk: 'Yes',
-            doesApplicantHaveASponsor: 'No',
+            sponsorDetails: {
+              doesApplicantHaveASponsor: 'No',
+              doesApplicantHaveANonLegalRepSponsor: 'No',
+            },
             decisionWithOrWithoutHearing: 'decisionWithHearing',
             isApplicationInTime: true,
             whetherApplicantHasToPayAFee: 'None of these statements apply to me',

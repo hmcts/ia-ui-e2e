@@ -12,7 +12,10 @@ test.describe('Set of tests to verify case officer is able to request home offic
         isApplicantStateless: false,
         nationality: 'Slovenian',
         isUserInTheUk: 'Yes',
-        doesApplicantHaveASponsor: 'No',
+        sponsorDetails: {
+          doesApplicantHaveASponsor: 'No',
+          doesApplicantHaveANonLegalRepSponsor: 'No',
+        },
         decisionWithOrWithoutHearing: 'decisionWithHearing',
         isApplicationInTime: true,
         appealSubmissionType: 'Non-Pay Appeal',
@@ -125,7 +128,9 @@ test.describe('Set of tests to verify case officer is able to request home offic
         applicationDetails.applicantDetails.decisionLetterDate.month - 1,
         applicationDetails.applicantDetails.decisionLetterDate.day,
       );
-      const formattedDecisionDate = decisionDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).replace('Sept', 'Sep');
+      const formattedDecisionDate = decisionDate
+        .toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+        .replace('Sept', 'Sep');
 
       await exui_pages.caseOverview.navigateToTab({ tabToSelect: 'Validation' });
 

@@ -12,7 +12,10 @@ test.describe('Set of tests to verify home office user is able to upload appeal 
         isApplicantStateless: false,
         nationality: 'Slovenian',
         isUserInTheUk: 'Yes',
-        doesApplicantHaveASponsor: 'No',
+        sponsorDetails: {
+          doesApplicantHaveASponsor: 'No',
+          doesApplicantHaveANonLegalRepSponsor: 'No',
+        },
         decisionWithOrWithoutHearing: 'decisionWithHearing',
         isApplicationInTime: true,
         whetherApplicantHasToPayAFee: 'None of these statements apply to me',

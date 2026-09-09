@@ -18,7 +18,10 @@ test.describe('Tests the allow the user to submit a response to a judges decisio
         const applicantDetails = await cui_apiClient.completeAndSubmitNewAppealJourneyViaApi({
           appealType: 'EU Settlement Scheme',
           decisionWithOrWithoutHearing: 'decisionWithHearing',
-          doesApplicantHaveASponsor: 'No',
+          sponsorDetails: {
+            doesApplicantHaveASponsor: 'No',
+            doesApplicantHaveANonLegalRepSponsor: 'No',
+          },
           hasApplicantReceivedADeportationOrder: 'No',
           isApplicantStateless: false,
           nationality: 'Albanian',
